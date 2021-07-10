@@ -20,8 +20,8 @@
     "id": "ID",
     "apply": "Zastosuj",
     "status": "Status",
-    "imageUploader": "Przesyłanie zdjęć (Max 5MB)",
-    "uploadImage": "Prześlij zdjęcie",
+    "uploader": "Przesyłanie (Max 5MB)",
+    "upload": "Prześlij",
     "remove": "Usuń",
     "enabled": "Włączone",
     "activeServer": "Aktywne serwery",
@@ -40,7 +40,16 @@
     "noResults": "Brak wyników",
     "externalWindow": "Otwórz w nowym oknie",
     "lostConnection": "Straciłeś połączenie z serwerem",
-    "serverStatus": "Status serwera"
+    "serverStatus": "Status serwera",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export",
+    "learnMore": "Learn More",
+    "copy": "Copy",
+    "icon": "Icon",
+    "errors": {
+      "limitReached": "Error: max limit reached"
+    }
   },
   "sideMenu": {
     "buttons": {
@@ -54,7 +63,8 @@
       "myAccount": "Moje konto",
       "goFullscreen": "Włącz tryb pełnoekranowy",
       "exitFullscreen": "Wyłącz tryb pełnoekranowy",
-      "disclaimer": "Uzyskując dostęp lub korzystając z SonoranCAD, akceptujesz nasze warunki i zasady oraz politykę prywatności."
+      "disclaimer": "Uzyskując dostęp lub korzystając z SonoranCAD, akceptujesz nasze warunki i zasady oraz politykę prywatności.",
+      "menu": "Menu"
     }
   },
   "settings": {
@@ -64,12 +74,30 @@
     "language": "Język",
     "voice": "Głos",
     "apiIdDisable": "Musisz być zalogowany do społeczności aby ustawić swoje API ID",
+    "secretDisable": "You must be logged into a community to retrieve your Secret ID",
     "hotkeys": "Skróty klawiszowe",
     "hotkeyDisable": "Skróty klawiszowe są niedostępne w bezpłatnej wersji",
     "prefix": "Prefiks",
     "panic": "Panic",
-    "id1": "ID #1",
-    "id2": "ID #2"
+    "lockWindow": "Lock Window",
+    "unlockWindow": "Unlock Window",
+    "quickResize": "Quick Resize",
+    "exitResize": "Exit Resize",
+    "classicLayout": "Classic Layout",
+    "resetLayout": "Reset Layout",
+    "bringToTop": "Bring to Top"
+  },
+  "taskbar": {
+    "system": "System",
+    "newWindow": "New Window",
+    "pinToTaskbar": "Pin to taskbar",
+    "unpinFromTaskbar": "Unpin from taskbar",
+    "taskbarPosition": "Taskbar Position",
+    "tabCustomization": "Tab Customization",
+    "displayTabIcons": "Display Tab Icons",
+    "displayTabLabels": "Display Tab Labels",
+    "layoutCustomization": "Layout Customization",
+    "startMenu": "Start Menu"
   },
   "login": {
     "buttons": {
@@ -158,15 +186,11 @@
       "email": "Email",
       "username": "Nazwa użytkownika",
       "emailPreferences": "Preferencje Email",
-      "changePassword": "Zmień hasło",
-      "newPassword": "Nowe hasło",
       "confirmPassword": "Potwierdź hasło",
       "emailMe": "Informuj mnie mailowo o ważnych ogłoszeniach, aktualizacjach oraz promocjach."
     },
     "buttons": {
-      "changePassword": "Zmień hasło",
-      "subscriptions": "Subskrypcje",
-      "deleteAccount": "Usuń konto"
+      "subscriptions": "Subskrypcje"
     },
     "errors": {
       "passwordLength": "Błąd: Twoje hasło musi zawierać przynajmniej 5 znaków!",
@@ -176,37 +200,17 @@
   },
   "payment": {
     "text": {
-      "paymentCenter": "Centrum Płatności",
-      "confirmCancel1": "Jesteś pewny, że chcesz anulować tę subskrypcję?",
-      "confirmCancel2": "Twoja subskrypcja będzie nadal aktywna do daty zakończenia. Po tym czasie płatność NIE zostanie automatycznie pobrana z Twojej karty.",
-      "cancelSubscription": "Anuluj subskrypcję",
-      "confirmPurchase": "Jesteś pewny, że chcesz kupić tę subskrypcję?",
-      "totalDue": "Łącznie do zapłaty",
-      "currentPlan": "Obecny Plan",
-      "updateBilling": "Zaktualizuj informacje o płatności",
-      "updateCard": "Zaktualizuj kartę płatniczą",
-      "updateSubscription": "Zaktualizuj Subskrypcję",
-      "confirmUpdate": "Jesteś pewny, że chcesz zmodyfikować swoją subskrypcję?",
-      "nextDate": "Data następnej płatności",
-      "nextAmount": "Kwota następnej płatności",
-      "purchaseAgreement1": "Zgadzam się z",
-      "purchaseAgreement2": "Warunkami Usługi",
-      "purchaseAgreement3": "Polityką Prywatności",
-      "purchaseAgreement4": "oraz Umową Kupna.",
+      "setCommunityId": "Set Community ID",
       "newSubscription": "Nowa Subskrypcja",
-      "subtotal": "Cena częściowa",
-      "Discount": "Zniżka",
-      "activeSubscriptions": "Aktywne Subskrypcje",
-      "canceledSubscriptions": "Anulowane Subskrypcje",
-      "invoices": "Faktury",
-      "incompleteWarning": "Jeśli Twoja subskrypcja widnieje jako NIEKOMPLETNA, kliknij 'Wyświetl' na otwartej fakturze, aby dokończyć zakup. Często ma to związek z niedokładnym dopasowaniem informacji.",
-      "percentOff": "% Zniżki"
+      "bundleAndSave": "Bundle and Save",
+      "serversEmail": "Sonoran Servers Account Email",
+      "serverIp": "Server IP",
+      "bundleExplain": "Save 30% every month when you purchase a VPS from Sonoran Servers."
     },
     "labels": {
       "plan": "Plan",
       "startDate": "Data Rozpoczęcia",
-      "discordUsername": "Nazwa użytkownika Discord",
-      "coupon": "Kod Kuponu",
+      "startDate": "Start Date",
       "starter": "Starter",
       "standard": "Standard",
       "plus": "Plus",
@@ -215,10 +219,6 @@
     "buttons": {
       "purchase": "Kup Subskrypcje",
       "comparePlans": "Porównaj Plany"
-    },
-    "errors": {
-      "missingId": "Błąd: Proszę podać ID Społeczności!",
-      "paymentSuccess": "Twoja subskrypcja została pomyślnie rozpoczęta!"
     }
   },
   "communityMenu": {
@@ -296,8 +296,8 @@
       "newLookup": "Nowe wyszukanie",
       "refresh": "Odśwież",
       "nameSearch": "Szukanie Osoby",
-      "first":"Imię",
-      "last":"Nazwisko",
+      "first": "Imię",
+      "last": "Nazwisko",
       "mi": "Drugie Imię",
       "plateSearch": "Szukanie Pojazdu",
       "plate": "Numer rejestracyjny",
@@ -330,7 +330,8 @@
       },
       "alerts": {
         "emptySearch": "Błąd: Puste Wyszukanie!"
-      }
+      },
+      "getOwner": "Get Owner"
     },
     "records": {
       "general": {
@@ -345,6 +346,8 @@
         "removeRecord": "Usuń Rejestr",
         "pdf": "PDF",
         "applyForDmv": "Ubiegaj się o dostęp do Rejestrów DMV",
+        "copyLink": "Copy Record Link",
+        "pasteLink": "Paste Record Link",
         "noCustomTypes": "Brak rodzaji rejestrów: Dodaj je tutaj Administrator > Dostosowywanie > Niestandardowe Rejestry",
         "status": {
           "active": "AKTYWNE",
@@ -357,7 +360,8 @@
           "requiredField": "Błąd: Wymagane Pole",
           "nameOrPlate": "Błąd: Ten rejestr wymaga dodania cywila lub pojazdu!",
           "noName": "Błąd: Ten rejestr wymaga dodania cywila!",
-          "noPlate": "Błąd: Ten rejestr wymaga dodania pojazdu!"
+          "noPlate": "Błąd: Ten rejestr wymaga dodania pojazdu!",
+          "noCopiedLink": "Error: You do not have a record link copied!"
         }
       },
       "agency": {
@@ -477,6 +481,7 @@
       "note": "Notatka",
       "addNote": "Dodaj Notatkę",
       "dispatchRecord": "Dispatch Record",
+      "trackPrimary": "Track Primary Unit (GPS)",
       "confirmations": {
         "close1": "Ustawiłeś status wezwania na ZAMKNIĘTE.",
         "close2": "Jesteś pewny, że chcesz zamknąć to wezwanie?",
@@ -485,9 +490,9 @@
         "detatchConfirm": "Jesteś pewny, że chcesz odłączyć od tego wezwania?"
       },
       "statusOptions": {
-        "pending":"Oczekuje",
-        "active":"Aktywne",
-        "closed":"Zamknięte"
+        "pending": "Oczekuje",
+        "active": "Aktywne",
+        "closed": "Zamknięte"
       },
       "originOptions": {
         "caller": "Dzwoniący",
@@ -544,14 +549,14 @@
       "records": "Rejestry",
       "bolo": "BOLO",
       "liveMap": "Mapa na żywo",
-      "10Codes": "Kody Dziesiątkowe",
-      "penalCodes": "Kodeks Karny",
       "quickLinks": "Szybkie Linki",
       "signal": "Sygnał",
       "activeUnits": "Aktywne Jednostki",
       "activeCalls": "Aktywne Wezwania",
       "emergencyCalls": "Połączenia Alarmowe",
-      "panic": "Panic"
+      "panic": "Panic",
+      "file": "File(s)",
+      "toneBoard": "Tone Board"
     },
     "signal": {
       "signal": "Sygnał",
@@ -579,6 +584,8 @@
     },
     "units": {
       "activeUnits": "Aktywne Jednostki",
+      "dispatchersShown": "Dispatchers Shown",
+      "dispatchersHidden": "Dispatchers Hidden",
       "addToCall": "Dodaj do wezwania",
       "addToGroup": "Dodaj do grupy",
       "newGroup": "Nowa Grupa",
@@ -600,8 +607,6 @@
       "advanced": "Zaawansowane",
       "permissionKeys": "Klucze Uprawnień",
       "departments": "Departamenty",
-      "10Codes": "Kody Dziesiąykowe",
-      "penalCodes": "Kodeks Karny",
       "customRecords": "Niestandardowe Rejestry",
       "inGameIntegration": "Integracja w grze",
       "discordIntegration": "Integracja z Discordem",
@@ -621,8 +626,6 @@
       "changeHeader": "Zmień ID społeczności",
       "changeSubtext1": "Właściciel społeczności może poprosić o nowe ID Społeczności.",
       "changeSubtext2": "Wszyscy użytkownicy muszą się wylogować z systemu i zalogować ponownie aby uniknąć błędów.",
-      "changeWarning1": "Jeśli Twoja społeczność posiada aktywną subskrypcje, Twoja społeczność zostanie zdgradowana do wersji BEZPŁATNEJ.",
-      "changeWarning2": "Musisz zaktualizować ID społeczności w centrum płatności, wybierając \"Edytuj\" na aktywnej subskrypcji.",
       "existingId": "Obecne ID",
       "newId": "Nowe ID",
       "requestChange": "Poproś o zmianę"
@@ -634,7 +637,7 @@
       "customizationDisabled": "Dostosowywanie nie jest zawarte w Twojej wersji.",
       "info": {
         "communityInfo": "Informacje o Społeczności",
-        "communityId":"ID Społeczności",
+        "communityId": "ID Społeczności",
         "name": "Nazwa",
         "subtitle": "Podtytuł",
         "website": "Strona Internetowa",
@@ -644,7 +647,11 @@
       },
       "geo": {
         "geographicalSettings": "Ustawienia Geograficzne",
-        "geoSubtext": "Określ położenie geograficzne swojej społeczności, aby zmienić sformułowanie słów i systemów CAD."
+        "geoSubtext": "Określ położenie geograficzne swojej społeczności, aby zmienić sformułowanie słów i systemów CAD.",
+        "emergencyCode": "Emergency Code",
+        "penalCodeName": "Penal Code Name",
+        "tenCodeName": "Ten Code Name",
+        "currencyDelimiter": "Currency Delimiter"
       },
       "unitStatus": {
         "unitStatusCodes": "Statusy Jednostek",
@@ -656,10 +663,6 @@
       },
       "customLogin": {
         "customLoginPage": "Niestandardowa Strona Logowania",
-        "subtext1": "Ten link pokazuje niestandardową stronę logowania dla Twojej społeczności.",
-        "subtext2": "Nasz zasób HTML może być hostowany na Twojej własnej domenie, aby wyświetlić Twoją niestandardową stronę logowania na Twojej domenie.",
-        "subtext3": "Aby zainstalować, wklej poniższy link URL do strony HTML hostowanej na Twojej domenie.",
-        "downloadResource": "Pobierz Zasób",
         "url": "URL"
       },
       "quickLinks": {
@@ -669,6 +672,14 @@
         "label": "Etykieta",
         "link": "Link",
         "color": "Kolor"
+      },
+      "notificationTones": {
+        "notificationTones": "Notification Tones",
+        "newDispatch": "New Dispatch",
+        "dispatchUpdated": "Dispatch Updated",
+        "dispatchClosed": "Dispatch Closed",
+        "statusChange": "Status Change",
+        "dispatchNote": "Dispatch Note"
       },
       "emails": {
         "customEmails": "Niestandardowe Emaile",
@@ -706,10 +717,9 @@
         "name": "Nazwa",
         "description": "Opis"
       },
-      "flags": {
-        "flagTypes": "Rodzaje Tagów",
-        "subtext1": "Dostosuj poniżej rodzaje tagów dla Twojej społeczności!",
-        "newFlag": "Nowy Tag"
+      "lookupTypes": {
+        "lookupTypes": "Lookup Types",
+        "customRecordFieldId": "Custom Record Field ID"
       },
       "errors": {
         "serverLimit1": "Błąd: Twoja społeczność posiada limit do",
@@ -809,6 +819,9 @@
       "penalCodeAbout": "Ten WebHook zostanie wysłany jeśli administrator doda, zedytuje lub usunie kodeks karny.",
       "apiRequest": "Prośba API",
       "apiRequestAbout": "Ten WebHook zostanie wysłany jeśli poproszono o API.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
+      "toneBoardAbout": "This webhook will be sent when a tone is played by a dispatcher",
       "errors": {
         "maxWebhooks": "Błąd: Osiągnąłeś limit webkooków dla Twojej społeczności:"
       }
@@ -844,7 +857,9 @@
       "joined": "Dołączył",
       "permissions": "Pozwolenia",
       "lastLogin": "Ostatnie Logowanie",
-      "apiIds": "API ID"
+      "apiIds": "API ID",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Istniejące Typy Niestandardowych Rejestrów",
@@ -855,10 +870,15 @@
       "addPremadeSection": "Dodaj Gotową Sekcje",
       "recordSections": "Sekcje Rejestrów",
       "newField": "Nowe Pole",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
+      "enableDuplicate": "Enable Duplicate",
+      "duplicateSection": "Duplicate Section",
       "sectionLabel": "Etykieta Sekcji",
       "lookupPreviewAbout": "Pokaż wartość pola w tabeli wyszukiwania",
       "supervisorAbout": "Ogranicz pole jedynie dla supervisorów",
       "requiredAbout": "Pole Wymagane",
+      "uniqueField": "Unique Field",
       "newValue": "Nowa Wartość",
       "reverseMap": "Odwróć Mapę",
       "enableMapping": "Włącz Mapowanie",
@@ -868,6 +888,7 @@
       "name": "Nazwa",
       "mask": "Maska",
       "label": "Etykieta",
+      "width": "Width",
       "dbMap": "Mapowanie Bazy Danych",
       "recordTypes": {
         "warrant": "Poszukiwany",
@@ -885,12 +906,15 @@
         "lawReport": "Raporty Prawników"
       },
       "errors": {
-        "maxCiv": "BŁĄD: Niestandardowe typy REJESTRÓW nie mogą mieć więcej niż 3 sekcje cywilów.",
-        "maxVeh": "BŁĄD: Niestandardowe typy REJESTRÓW nie mogą mieć więcej niż 3 sekcje pojazdów.",
-        "noCivOrVeh": "BŁĄD: Wszystkie niestandardowe typy REJESTRÓW muszą zawierać sekcje cywilów lub pojazdów aby były wyszukiwalne!",
-        "noStatus": "BŁĄD: Ten typ rejestrów MUSI mieć JEDNO pole 'status'.",
-        "noCiv": "BŁĄD: Ten typ rejestrów MUSI mieć JEDNO pole cywilów.",
-        "oneCivAndOneVeh": "BŁĄD: Ten typ rejestrów MUSI mieć JEDNO pole cywilów oraz JEDNO pole pojazdów."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field.",
+        "noStatusField": "ERROR: This record type must have ONE custom field with the UID of 'status'",
+        "noPreviewedFields": "ERROR: This record template has no fields enabled for preview.",
+        "noName": "ERROR: This record template has no name set."
       },
       "remove": {
         "removeType": "Usuń Typ Rejestrów",
@@ -917,11 +941,12 @@
       "staticOnly": "Link do Statycznej Mapy",
       "staticOnlyAbout": "Jeśli tryb Twojej gry nie jest kompatybilny z zasobami mapy na żywo, możesz podać link do mapy Twojej gry.",
       "mapType": "Typ Mapy",
+      "uploadCustomMap": "Upload Custom Map",
       "server": "Server",
       "ip": "IP",
       "websiteUrl": "Link Strony Internetowej",
       "mapPort": "Port Port",
-      "listenerPort": "Listener Port",
+      "gamePort": "Game Port",
       "saveAndDeploy": "Zapisz i Wdróż",
       "dbSync": {
         "dbSyncHeader": "Synchronizacja z Bazą Danych",
@@ -957,17 +982,23 @@
         "tooltipLabel": "To jest pole opisu",
         "tooltipColumn": "To jest nazwa kolumny Twojej tabeli bazy danych zawierajacej dane tego pola.",
         "tooltipTable": "To jest nazwa tabeli bazy danych, w której znajduje się ta kolumna danych.",
-        "tooltipCharacterColumn": "To jest nazwa unikatowego ID postaci z Twojej tabeli. Zazwyczaj zawiera Steam Hex."
+        "tooltipCharacterColumn": "To jest nazwa unikatowego ID postaci z Twojej tabeli. Zazwyczaj zawiera Steam Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name.",
+        "friendlyMapping": "Friendly Mapping",
+        "tooltipFriendlyMapping": "This allows you to map common DB values to more friendly UI values.",
+        "friendlyMappingExample": "Ex: 'drive_license' -> 'Driver's License'",
+        "dbValue": "Database Value",
+        "friendlyValue": "Friendly Value"
       }
     },
     "penal": {
-      "penalCodes": "Kodeks Karny",
       "createNewPenal": "Dodaj Nowy Kod Karny",
       "editPenal": "Edytuj Kod Karny",
       "code": "Kod",
       "title": "Tytuł",
-      "chargeType":"Rodzaj Pobrania Opłaty",
-      "bondType":"Rodzaj Poświadczenia",
+      "chargeType": "Rodzaj Pobrania Opłaty",
+      "bondType": "Rodzaj Poświadczenia",
       "bondAmount": "Kwota Mandatu / Poświadczenia",
       "jailTime": "Czas Więzienia",
       "confirmRemove": "Jesteś pewny, że chcesz usunąć ten kod?",
@@ -987,7 +1018,6 @@
     },
     "10Codes": {
       "action": "Akcja",
-      "10Codes": "Kody Dziesiątkowe",
       "code": "Kod"
     },
     "permissions": {
@@ -1014,7 +1044,7 @@
       "toggles": {
         "editIdent": "Edycja Kryptonimu",
         "editOtherIdent": "Edycja Kryptonimów Innych Jednostek.",
-        "selfDispatch":"Samodzielny Dyspozytor",
+        "selfDispatch": "Samodzielny Dyspozytor",
         "supervisor": "Supervisor"
       },
       "confirmKick": "Jesteś pewny, że chcesz wyrzucić",
@@ -1030,6 +1060,9 @@
       "errors": {
         "duplicateKey": "Błąd: Klucz o tej nazwie już istnieje!"
       }
+    },
+    "addresses": {
+      "addresses": "Addresses"
     }
   }
 }

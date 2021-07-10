@@ -20,8 +20,8 @@
     "id": "ID",
     "apply": "Anwenden",
     "status": "Status",
-    "imageUploader": "Bild hochladen (5MB Max)",
-    "uploadImage": "Bild hochladen",
+    "uploader": "Hochladen (5MB Max)",
+    "upload": "Hochladen",
     "remove": "Entfernen",
     "enabled": "Aktiviert",
     "activeServer": "Aktiver Server",
@@ -40,7 +40,16 @@
     "noResults": "Keine Ergebnisse",
     "externalWindow": "In externen Fenster öffnen",
     "lostConnection": "Du hast die Verbindung mit dem Server verloren.",
-    "serverStatus": "Serverstatus"
+    "serverStatus": "Serverstatus",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export",
+    "learnMore": "Learn More",
+    "copy": "Copy",
+    "icon": "Icon",
+    "errors": {
+      "limitReached": "Error: max limit reached"
+    }
   },
   "sideMenu": {
     "buttons": {
@@ -54,7 +63,8 @@
       "myAccount": "Mein Account",
       "goFullscreen": "Vollbildmodus",
       "exitFullscreen": "Vollbildmodus beenden",
-      "disclaimer": "Durch Zugriff oder Nutzung von Sonoran CAD stimmst du den Geschäftsbedingungen und der Datenschutzerklärung zu."
+      "disclaimer": "Durch Zugriff oder Nutzung von Sonoran CAD stimmst du den Geschäftsbedingungen und der Datenschutzerklärung zu.",
+      "menu": "Menu"
     }
   },
   "settings": {
@@ -64,12 +74,30 @@
     "language": "Sprache",
     "voice": "Stimme",
     "apiIdDisable": "Du musst in einer Community eingeloggt sein, um deine API ID einstellen zu können",
+    "secretDisable": "You must be logged into a community to retrieve your Secret ID",
     "hotkeys": "Hotkeys",
     "hotkeyDisable": "Hotkeys sind in der kostenlosen Version nicht verfügbar",
     "prefix": "Präfix",
     "panic": "Panik",
-    "id1": "ID #1",
-    "id2": "ID #2"
+    "lockWindow": "Lock Window",
+    "unlockWindow": "Unlock Window",
+    "quickResize": "Quick Resize",
+    "exitResize": "Exit Resize",
+    "classicLayout": "Classic Layout",
+    "resetLayout": "Reset Layout",
+    "bringToTop": "Bring to Top"
+  },
+  "taskbar": {
+    "system": "System",
+    "newWindow": "New Window",
+    "pinToTaskbar": "Pin to taskbar",
+    "unpinFromTaskbar": "Unpin from taskbar",
+    "taskbarPosition": "Taskbar Position",
+    "tabCustomization": "Tab Customization",
+    "displayTabIcons": "Display Tab Icons",
+    "displayTabLabels": "Display Tab Labels",
+    "layoutCustomization": "Layout Customization",
+    "startMenu": "Start Menu"
   },
   "login": {
     "buttons": {
@@ -158,15 +186,11 @@
       "email": "Email",
       "username": "Username",
       "emailPreferences": "Emaileinstellungen",
-      "changePassword": "Passwort ändern",
-      "newPassword": "Neues Passwort",
       "confirmPassword": "Passwort bestätigen",
       "emailMe": "Schickt mir wichtige Ankündigungen, Updates und Angebote."
     },
     "buttons": {
-      "changePassword": "Passwort ändern",
-      "subscriptions": "Abos",
-      "deleteAccount": "Account löschen"
+      "subscriptions": "Abos"
     },
     "errors": {
       "passwordLength": "Fehler: Dein Password muss länger als 5 Zeichen sein!",
@@ -176,37 +200,17 @@
   },
   "payment": {
     "text": {
-      "paymentCenter": "Zahlungsübersicht",
-      "confirmCancel1": "Bist du sicher, dass du dieses Abo abbestellen möchtest?",
-      "confirmCancel2": "Dein Abo bleibt bis zum Enddatum ativ, aber deine Karte wird nicht neu belastet automatisch.",
-      "cancelSubscription": "Abo abbestellen",
-      "confirmPurchase": "Bist du sicher, dass du dieses Abo bestellen möchtest?",
-      "totalDue": "Gesamt heute fällig",
-      "currentPlan": "Momentanes Abo",
-      "updateBilling": "Zahlungsinformationen aktualisieren",
-      "updateCard": "Karte aktualisieren",
-      "updateSubscription": "Abo aktualisieren",
-      "confirmUpdate": "Bist du sicher, dass du dieses Abo modifizieren möchtest?",
-      "nextDate": "Nächstes Rechnungsdatum",
-      "nextAmount": "Nächster Rechnungsbetrag",
-      "purchaseAgreement1": "Ich stimme den",
-      "purchaseAgreement2": "Geschäftsbedingungen",
-      "purchaseAgreement3": "Datenschutzerklärungen",
-      "purchaseAgreement4": "und Kaufvereinbarungen.",
+      "setCommunityId": "Set Community ID",
       "newSubscription": "Neues Abo",
-      "subtotal": "Zwischensumme",
-      "Discount": "Rabatt",
-      "activeSubscriptions": "Aktive Abos",
-      "canceledSubscriptions": "Stornierte Abos",
-      "invoices": "Rechnungen",
-      "incompleteWarning": "Wenn dein Abo als INCOMPLETE angezeigt wird, klicke auf 'View' in der offenen Rechnung, um den Kauf zu vervollständigen. Dies passiert häufig, wenn die Informationen nicht exakt übereinstimmen.",
-      "percentOff": "% Rabatt"
+      "bundleAndSave": "Bundle and Save",
+      "serversEmail": "Sonoran Servers Account Email",
+      "serverIp": "Server IP",
+      "bundleExplain": "Save 30% every month when you purchase a VPS from Sonoran Servers."
     },
     "labels": {
       "plan": "Plan",
       "startDate": "Anfangsdatum",
-      "discordUsername": "Discord Username",
-      "coupon": "Rabattcode",
+      "endDate": "End Date",
       "starter": "Starter",
       "standard": "Standard",
       "plus": "Plus",
@@ -215,10 +219,6 @@
     "buttons": {
       "purchase": "Abo kaufen",
       "comparePlans": "Pläne vergleichen"
-    },
-    "errors": {
-      "missingId": "Fehler: Bitte fülle das Community-ID-Feld aus!",
-      "paymentSuccess": "Dein Abo wurde erfolgreich gestartet!"
     }
   },
   "communityMenu": {
@@ -296,8 +296,8 @@
       "newLookup": "Neue Suche",
       "refresh": "Neu laden",
       "nameSearch": "Namenssuche",
-      "first":"Vorname",
-      "last":"Nachname",
+      "first": "Vorname",
+      "last": "Nachname",
       "mi": "Initial des zweiten Vornamen",
       "plateSearch": "Kennzeichensuche",
       "plate": "Kennzeichen",
@@ -330,7 +330,8 @@
       },
       "alerts": {
         "emptySearch": "Fehler: Leere Suche!"
-      }
+      },
+      "getOwner": "Get Owner"
     },
     "records": {
       "general": {
@@ -345,6 +346,8 @@
         "removeRecord": "Eintrag entfernen",
         "pdf": "PDF",
         "applyForDmv": "Einen zulassungseintrag einsenden",
+        "copyLink": "Copy Record Link",
+        "pasteLink": "Paste Record Link",
         "noCustomTypes": "Keine Eintragsarten: Füge sie unter Admin > Anpassung > Eigene Einträge hinzu",
         "status": {
           "active": "AKTIV",
@@ -357,7 +360,8 @@
           "requiredField": "Fehler: Erforderliches Feld",
           "nameOrPlate": "Fehler: Dieser Eintrag muss einen zivilen Namen oder Kennzeichen haben, um gesucht werden zu können!",
           "noName": "Fehler: Dieser Eintrag muss einen zivilen Namen haben, um gesucht werden zu können!",
-          "noPlate": "Fehler: Dieser Eintrag muss ein Kennzeichen haben, um gesucht werden zu können!"
+          "noPlate": "Fehler: Dieser Eintrag muss ein Kennzeichen haben, um gesucht werden zu können!",
+          "noCopiedLink": "Error: You do not have a record link copied!"
         }
       },
       "agency": {
@@ -477,6 +481,7 @@
       "note": "Notiz",
       "addNote": "Notiz hinzufügen",
       "dispatchRecord": "Leitstelleneintrag",
+      "trackPrimary": "Track Primary Unit (GPS)",
       "confirmations": {
         "close1": "Du hast den Einsatzstatus auf GESCHLOSSEN geändert.",
         "close2": "Bist du sicher, dass du den Einsatz schließen möchtest?",
@@ -485,9 +490,9 @@
         "detatchConfirm": "Bist du sicher, dass du dich von diesem Einsatz ablösen möchtest?"
       },
       "statusOptions": {
-        "pending":"Wartend",
-        "active":"Aktiv",
-        "closed":"Geschlossen"
+        "pending": "Wartend",
+        "active": "Aktiv",
+        "closed": "Geschlossen"
       },
       "originOptions": {
         "caller": "Anrufer",
@@ -544,14 +549,14 @@
       "records": "Einträge",
       "bolo": "Fahndung",
       "liveMap": "Live Map",
-      "10Codes": "10-Codes",
-      "penalCodes": "Strafgesetzbuch",
       "quickLinks": "Lesezeichen",
       "signal": "Signal",
       "activeUnits": "Aktive Einheiten",
       "activeCalls": "Aktive Einsätze",
       "emergencyCalls": "Notrufe",
-      "panic": "Panik"
+      "panic": "Panik",
+      "file": "File(s)",
+      "toneBoard": "Tone Board"
     },
     "signal": {
       "signal": "Signal",
@@ -579,6 +584,10 @@
     },
     "units": {
       "activeUnits": "Aktive Einheiten",
+      "dispatchersShown": "Dispatchers Shown",
+      "dispatchersHidden": "Dispatchers Hidden",
+      "dispatchersShown": "Dispatchers Shown",
+      "dispatchersHidden": "Dispatchers Hidden",
       "addToCall": "Dem Einsatz hinzufügen",
       "addToGroup": "Der Gruppe hinzufügen",
       "newGroup": "Neue Gruppe",
@@ -600,8 +609,6 @@
       "advanced": "Erweitert",
       "permissionKeys": "Berechtigungsschlüssel",
       "departments": "Bereiche",
-      "10Codes": "10-Codes",
-      "penalCodes": "Strafgesetzbuch",
       "customRecords": "Eigene Einträge",
       "inGameIntegration": "In-Game-Integration",
       "discordIntegration": "Discord-Integration",
@@ -621,8 +628,6 @@
       "changeHeader": "Deine Community-ID ändern",
       "changeSubtext1": "Communitybesitzer können eine neue Community-ID angeben.",
       "changeSubtext2": "Alle Nutzer des CADs müssen sich ausloggen und neuanmelden, um Probleme zu vermeiden.",
-      "changeWarning1": "Wenn deine Community ein aktives Abo hat, wird deine Community auf die FREE Version zurückgesetzt.",
-      "changeWarning2": "Du wirst die Community-ID in der Zahlungsübersicht ändern müssen, indem du \"Modify\" bei dem aktiven Abo klickst.",
       "existingId": "Existierende ID",
       "newId": "Neue ID",
       "requestChange": "Änderung beantragen"
@@ -634,7 +639,7 @@
       "customizationDisabled": "Communityanpassung ist in deiner Version nicht beinhaltet.",
       "info": {
         "communityInfo": "Community Info",
-        "communityId":"Community ID",
+        "communityId": "Community ID",
         "name": "Name",
         "subtitle": "Untertitel",
         "website": "Webseite",
@@ -644,7 +649,11 @@
       },
       "geo": {
         "geographicalSettings": "Geografische Einstellungen",
-        "geoSubtext": "Spezifiziere die geografische Örtlichkeit deiner Community, um den Wortlauf von System in deinem CAD zu ändern."
+        "geoSubtext": "Spezifiziere die geografische Örtlichkeit deiner Community, um den Wortlauf von System in deinem CAD zu ändern.",
+        "emergencyCode": "Emergency Code",
+        "penalCodeName": "Penal Code Name",
+        "tenCodeName": "Ten Code Name",
+        "currencyDelimiter": "Currency Delimiter"
       },
       "unitStatus": {
         "unitStatusCodes": "Einheitenstatuscodes",
@@ -656,10 +665,6 @@
       },
       "customLogin": {
         "customLoginPage": "Eigene Loginseite",
-        "subtext1": "Diese URL zeigt die eigene Loginseite deiner Community an.",
-        "subtext2": "Unsere HTML-Resource kann auf deinem eigenen Domänennamen gehostet werden, um deine eigene Loginseite auf deiner Domäne anzuzeigen.",
-        "subtext3": "Um sie zu installieren, füge die URL auf deiner HTML-Seite hinzu und hoste sie auf deiner Domäne.",
-        "downloadResource": "Resource herunterladen",
         "url": "URL"
       },
       "quickLinks": {
@@ -669,6 +674,14 @@
         "label": "Bezeichnung",
         "link": "Link",
         "color": "Farbe"
+      },
+      "notificationTones": {
+        "notificationTones": "Notification Tones",
+        "newDispatch": "New Dispatch",
+        "dispatchUpdated": "Dispatch Updated",
+        "dispatchClosed": "Dispatch Closed",
+        "statusChange": "Status Change",
+        "dispatchNote": "Dispatch Note"
       },
       "emails": {
         "customEmails": "Eigene Community-Emails",
@@ -706,10 +719,9 @@
         "name": "Name",
         "description": "Beschreibung"
       },
-      "flags": {
-        "flagTypes": "Markierungsarten",
-        "subtext1": "Passe die Markierungsarten deiner Einträge an!",
-        "newFlag": "Neue Markierung"
+      "lookupTypes": {
+        "lookupTypes": "Lookup Types",
+        "customRecordFieldId": "Custom Record Field ID"
       },
       "errors": {
         "serverLimit1": "Fehler: Deine Community ist auf",
@@ -809,6 +821,9 @@
       "penalCodeAbout": "Dieser WebHook wird gesendet, wenn ein Admin das Strafgesetzbuch hinzufügt, modifiziert oder entfernt.",
       "apiRequest": "API Request",
       "apiRequestAbout": "Dieser WebHook wird gesendet, wenn ein API request gesendet wird.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
+      "toneBoardAbout": "This webhook will be sent when a tone is played by a dispatcher",
       "errors": {
         "maxWebhooks": "Fehler: Du hast die maximale Anzahl an Discord-Webhooks deiner Community erreicht:"
       }
@@ -844,7 +859,9 @@
       "joined": "Beigetreten",
       "permissions": "Berechtigungen",
       "lastLogin": "Letzter Login",
-      "apiIds": "API IDs"
+      "apiIds": "API IDs",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Existierende eigene Berichtsarten",
@@ -855,10 +872,15 @@
       "addPremadeSection": "Vorgefertigten Abschnitt hinzufügen",
       "recordSections": "Berichtsabschnitte",
       "newField": "Neues Feld",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
+      "enableDuplicate": "Enable Duplicate",
+      "duplicateSection": "Duplicate Section",
       "sectionLabel": "Abschnittstitel",
       "lookupPreviewAbout": "Zeige Feldwert in Suchvorschau",
       "supervisorAbout": "Beschränke Feld auf Vorgesetzte",
       "requiredAbout": "Erforderliches Feld",
+      "uniqueField": "Unique Field",
       "newValue": "Neuer Wert",
       "reverseMap": "Map umkehren",
       "enableMapping": "Mapping aktivieren",
@@ -868,6 +890,7 @@
       "name": "Name",
       "mask": "Maske",
       "label": "Label",
+      "width": "Width",
       "dbMap": "DB Sync Mapping",
       "recordTypes": {
         "warrant": "Haftbefehl",
@@ -885,12 +908,15 @@
         "lawReport": "Gesetzesbericht"
       },
       "errors": {
-        "maxCiv": "Fehler: Eigene BERICHTSarten können nicht mehr als 3 suchbare Charakterabschnitte haben.",
-        "maxVeh": "Fehler: Eigene BERICHTSarten können nicht mehr als 3 suchbare Fahrzeugabschnitte haben.",
-        "noCivOrVeh": "Fehler: Alle eigenen BERICHTSarten müssen mindestens einen Charakterabschnitt oder Fahrzeugabschnitt haben, um suchbar zu sein!",
-        "noStatus": "Fehler: Diese Berichtsart MUSS EIN eigenes 'Status' Feld haben.",
-        "noCiv": "Fehler: Diese Berichtsart MUSS EIN Charakterfeld haben.",
-        "oneCivAndOneVeh": "Fehler: Diese Berichtsart MUSS EIN Charakterfeld und EIN Fahrzeugfeld haben."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field.",
+        "noStatusField": "ERROR: This record type must have ONE custom field with the UID of 'status'",
+        "noPreviewedFields": "ERROR: This record template has no fields enabled for preview.",
+        "noName": "ERROR: This record template has no name set."
       },
       "remove": {
         "removeType": "Berichtsart entfernen",
@@ -917,11 +943,12 @@
       "staticOnly": "Nur statische URL",
       "staticOnlyAbout": "Wenn dein Spielmodus nicht mit der Live Map-Resource kompatibel ist, kannst du eine Webseite spezifizieren mit einer Karte deines Spiels stattdessen.",
       "mapType": "Kartenart",
+      "uploadCustomMap": "Upload Custom Map",
       "server": "Server",
       "ip": "IP",
       "websiteUrl": "Webseiten-URL",
       "mapPort": "Kartenport",
-      "listenerPort": "Listenerport",
+      "gamePort": "Game Port",
       "saveAndDeploy": "Speichern und einsetzen",
       "dbSync": {
         "dbSyncHeader": "Datenbank-Sync",
@@ -957,17 +984,23 @@
         "tooltipLabel": "Dies ist die Feldbeschreibung",
         "tooltipColumn": "Dies ist der Name der Spalte in deiner Datenbanktabelle, die diese Felddaten beinhaltet.",
         "tooltipTable": "Dies ist der Name der SQL-Tabelle, in der diese Datenspalte gefunden werden kann.",
-        "tooltipCharacterColumn": "Dies ist der Name der einzigartigen Charakter-ID-Spalte in deiner Tabelle. Normalerweise enthält dies die Steam-Hex."
+        "tooltipCharacterColumn": "Dies ist der Name der einzigartigen Charakter-ID-Spalte in deiner Tabelle. Normalerweise enthält dies die Steam-Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name.",
+        "friendlyMapping": "Friendly Mapping",
+        "tooltipFriendlyMapping": "This allows you to map common DB values to more friendly UI values.",
+        "friendlyMappingExample": "Ex: 'drive_license' -> 'Driver's License'",
+        "dbValue": "Database Value",
+        "friendlyValue": "Friendly Value"
       }
     },
     "penal": {
-      "penalCodes": "Strafgesetzbuch",
       "createNewPenal": "Neuen Paragrafen erstellen",
       "editPenal": "Paragrafen bearbeiten",
       "code": "Code",
       "title": "Titel",
       "chargeType": "Tatart",
-      "bondType":"Bürgschaftsart",
+      "bondType": "Bürgschaftsart",
       "bondAmount": "Bürgschafts/Strafbetrag",
       "jailTime": "Gefängniszeit",
       "confirmRemove": "Bist du sicher, dass du diesen Strafparagrafen löschen möchtest?",
@@ -987,7 +1020,6 @@
     },
     "10Codes": {
       "action": "Aktion",
-      "10Codes": "10-Codes",
       "code": "Code"
     },
     "permissions": {
@@ -1014,7 +1046,7 @@
       "toggles": {
         "editIdent": "Kennung ändern",
         "editOtherIdent": "Kennung Anderer ändern",
-        "selfDispatch":"Selbsteinsatz",
+        "selfDispatch": "Selbsteinsatz",
         "supervisor": "Vorgesetzter"
       },
       "confirmKick": "Bist du sicher, dass du kicken möchtest",
@@ -1030,6 +1062,9 @@
       "errors": {
         "duplicateKey": "Fehler: Ein doppelter Schlüssel mit diesem Namen existiert bereits!"
       }
+    },
+    "addresses": {
+      "addresses": "Addresses"
     }
   }
 }
